@@ -102,8 +102,12 @@ numpy-base                1.21.5           py39ha15fc14_3
 pandas                    1.4.4            py39h6a678d5_0   
 pickleshare               0.7.5           pyhd3eb1b0_1003  
 scipy                     1.9.1            py39h14f4228_0  
-yaml                      0.2.5                h7b6447c_0  
+yaml                      0.2.5                h7b6447c_0 
+
 ________________________
+
+- The installation on a normal desktop computer requires less than a minute.
+- The installation does not require any non-standard hardware
 
 
  
