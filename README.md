@@ -105,8 +105,9 @@ scipy                     1.9.1            py39h14f4228_0
 yaml                      0.2.5                h7b6447c_0 
 
 ________________________
+
 - The installation on a normal desktop computer requires less than a minute.
-- The installation does not require any non-standard hardware
+- The installation does not require any non-standard hardware.
 
 
  
