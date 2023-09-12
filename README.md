@@ -1,6 +1,4 @@
-________________________
-
-I. CONTENT
+**I. CONTENT**
 
 - config_mats.yaml: configuration file to run the script run_compute_mat.
 - config_sim.yaml: configuration file to run the script run_simulation.
@@ -32,7 +30,7 @@ respectively the matrices, the results of the simulations and the figures.
 
 ________________________
 
-II. SAMPLE DATA 
+**II. SAMPLE DATA** 
 
 The sample data provided refers to the 4th COVID-19 wave and are represented by individuals.
 In the 'data4th_a.pkl,' we only provide data regarding the adult population (>18 ya). 
@@ -42,10 +40,22 @@ The samples contain respectively 700, 500 and 200 random observations of the ori
 
 To run the code on your data. You need to format the latter as the one that we provided. 
 
+Variables:
+- 'wave': numbber of data collection
+- 'id': individial id
+- 'tot_all_': total number of contacts
+- 'age_group8': age group
+- 'employed': employment status
+- 'education3': education level [low,mid,high]
+- 'settlement_cur_num': settlement [capital,rural,urban]
+- 'fin_now3a': financial situation  [low,mid,high]
+- 'w': weight of the individual
+- 'all_0', 'all_1', 'all_2','all_3', 'all_4', 'all_5', 'all_6', 'all_7': number of contacts with each age group
+
 ________________________
 
 
-III. INSTRUCTIONS
+**III. INSTRUCTIONS**
 
 STEP 1: BUILD THE DECOUPLED AGE-CONTACT MATRICES
 
@@ -82,7 +92,7 @@ In the same file, you can modify any epidemiological parameter.
 
 ________________________
 
-IV. PACKAGES VERSIONS
+**IV. PACKAGES VERSIONS**
 
 joblib                    1.1.0              pyhd3eb1b0_0  
 json5                     0.9.6              pyhd3eb1b0_0  
