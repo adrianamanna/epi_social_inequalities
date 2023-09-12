@@ -7,7 +7,7 @@
 - plt_matrices.py: phyton script to plot decoupled age contact matrices
 - run_simulation_epi.py: phyton script to simulate the spread of an epidemic accounting for decoupled matrices. The model implemented is a SEIR model.
 - run_simulation.py: phyton script to simulate the spread of an epidemic accounting for decoupled matrices. The model implemented is a SEIR model.
-- plt_epi.py: phyton script to proces and plot the results of the simulations
+- plt_epi.py: phyton script to process and plot the results of the simulations
 
 In the 'data' folder:
 - data4th.pkl: sample file in pickle format

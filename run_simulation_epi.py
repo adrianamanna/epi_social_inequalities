@@ -2,7 +2,7 @@ import yaml
 import pickle
 
 from multiprocessing import cpu_count
-import joblib
+#import joblib
 
 from utils.epi_models_age_1dim import *
 from utils.fn_matrices import M_prep , upload_Ms
@@ -60,8 +60,7 @@ else:
     g2_v1_val = config['g2_v1_val']
 
 
-def run(i):
-    #print(i, end='\r')
+def run():
 
     C0_M2 = init_C0(pop_dist, config['N'], seeds_E, seeds_I, seeds_R,dist_init_v1 = vax_dist,dist_init_v2 = None)
     RESa_M2,t_m2 = SEIRDv_age_1dim(
@@ -80,10 +79,16 @@ def run(i):
                            pp=False)
     return RESa_M2
 
+all_RES=[]
+for i in range(config['iterations']):
+    print('iteration #: '+i, end='\r')
+    res_ =run() 
+    all_RES.append(res_)
 
-executor = joblib.Parallel(n_jobs=15, backend='multiprocessing')
-tasks = (joblib.delayed(run)(i) for i in range(config['iterations']))
-all_RES = executor(tasks)
+
+#executor = joblib.Parallel(n_jobs=1, backend='multiprocessing')
+#tasks = (joblib.delayed(run)(i) for i in range(config['iterations']))
+#all_RES = executor(tasks)
 
 with open(config['resPath']+'/simulations_{}.pickle'.format(''.join(strat_vars)),  'wb') as handle:
     pickle.dump(all_RES, handle)
