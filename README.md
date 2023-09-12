@@ -40,6 +40,8 @@ In the 'data4th_k.pkl,' we only provide data regarding the children's population
 
 The samples contain respectively 700, 500 and 200 random observations of the original data. 
 
+To run the code on your data. You need to format the latter as the one that we provided. 
+
 ________________________
 
 
