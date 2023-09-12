@@ -81,7 +81,7 @@ def run():
 
 all_RES=[]
 for i in range(config['iterations']):
-    print('iteration #: '+i, end='\r')
+    print('iteration #: '+str(i), end='\r')
     res_ =run() 
     all_RES.append(res_)
 
