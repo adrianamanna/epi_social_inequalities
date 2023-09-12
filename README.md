@@ -41,18 +41,17 @@ The samples contain respectively 700, 500 and 200 random observations of the ori
 To run the code on your data. You need to format the latter as the one that we provided. 
 
 Variables:
-- 'wave': numbber of data collection
+- 'wave': number of data collection
 - 'id': individial id
 - 'tot_all_': total number of contacts
 - 'age_group8': age group
 - 'employed': employment status
-- 'education3': education level [low,mid,high]
-- 'settlement_cur_num': settlement [capital,rural,urban]
-- 'fin_now3a': financial situation  [low,mid,high]
+- 'education3': education level [low, mid,high]
+- 'settlement_cur_num': settlement [capital, rural,urban]
+- 'fin_now3a': financial situation  [low, mid,high]
 - 'w': weight of the individual
 - 'all_0', 'all_1', 'all_2','all_3', 'all_4', 'all_5', 'all_6', 'all_7': number of contacts with each age group
-
-________________________
+_________________
 
 
 **III. INSTRUCTIONS**
@@ -73,9 +72,9 @@ The possible dimensions are:
 
 NOTE: TO SIMULATE THE EPIDEMIC WITH ANY DECOUPLED MATRIX YOU NEED TO COMPUTE BEFORE THE AGGREGATE MATRIX AS WELL.
 
-2. Run the run_compute_mat.py. This script computes and stores the decoupled matrices in the '_matrices' folder.
+2. Run 'python run_compute_mat.py' This script computes and stores the decoupled matrices in the '_matrices' folder.
 
-3. Run the plt_matrices.py. This script plots the decoupled matrices and stores the figures in the '_figures' folder.
+3. Run 'python plt_matrices.py' This script plots the decoupled matrices and stores the figures in the '_figures' folder.
 
 
 
@@ -84,17 +83,16 @@ STEP 2: SIMULATE THE EPIDEMIC
 simulation. It has to be input as a list of one string.
 In the same file, you can modify any epidemiological parameter.
 
-2. Run the run_simulation_epi.py. This script runs the simulations of the epidemic model and stores the results in the '_res' folder.
+2. Run 'python run_simulation_epi.py' This script runs the simulations of the epidemic model and stores the results in the '_res' folder.
 
 
-3. Run the plt_epi.py. This script processes the output of the simulation and plots the infection curves and the attack rates. The plot is then stored in the '_figures' folder.
+3. Run 'python plt_epi.py' This script processes the output of the simulation and plots the infection curves and the attack rates. The plot is then stored in the '_figures' folder.
 
 
 ________________________
 
 **IV. PACKAGES VERSIONS**
 
-joblib                    1.1.0              pyhd3eb1b0_0  
 json5                     0.9.6              pyhd3eb1b0_0  
 matplotlib                3.5.2            py39h06a4308_0  
 matplotlib-base           3.5.2            py39hf590b9c_0  

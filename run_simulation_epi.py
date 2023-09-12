@@ -2,8 +2,6 @@ import yaml
 import pickle
 
 from multiprocessing import cpu_count
-#import joblib
-
 from utils.epi_models_age_1dim import *
 from utils.fn_matrices import M_prep , upload_Ms
 import os
@@ -84,11 +82,6 @@ for i in range(config['iterations']):
     print('iteration #: '+str(i), end='\r')
     res_ =run() 
     all_RES.append(res_)
-
-
-#executor = joblib.Parallel(n_jobs=1, backend='multiprocessing')
-#tasks = (joblib.delayed(run)(i) for i in range(config['iterations']))
-#all_RES = executor(tasks)
 
 with open(config['resPath']+'/simulations_{}.pickle'.format(''.join(strat_vars)),  'wb') as handle:
     pickle.dump(all_RES, handle)
