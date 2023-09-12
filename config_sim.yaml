@@ -1,0 +1,34 @@
+wave: '4th W'
+data_type: 'all'
+
+
+resPath : './_res'
+figPath: './_figures'
+
+
+
+#. variables
+vars: ['employed'] # second dimension
+vax_scenario_m2: 'no_vax' #  vaccination scenario:  'no_vax' OR 'by_ageANDvar2' 
+
+
+#. population
+N: 9750000  # Total Hungarian Population
+
+#. epi params
+mu_val  : 0.4   # recovery rate
+eps_val : 0.25  # incubation period
+g1_v1_val: 0.7  # efficacy of vaccination against infection
+g2_v1_val: 0.8  # efficacy of vaccination against death
+
+seeds_E: 0   # initial number of exposed individuals
+seeds_I: 5   # initial number of infected individuals
+seeds_R: 0   # initial number of recovered individuals
+
+r0: 2.5  #reproductiove number
+
+
+
+#. simulation params
+stop_epi: 300 # number of steps of the simulation
+iterations: 50 # number of times the simulation is run
