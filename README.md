@@ -1,4 +1,6 @@
-**I. CONTENT**
+# Social inequalities that matter for contact patterns, vaccination and the spread of epidemics
+
+## I. CONTENT
 
 - config_mats.yaml: configuration file to run the script run_compute_mat.
 - config_sim.yaml: configuration file to run the script run_simulation.
@@ -30,7 +32,7 @@ respectively the matrices, the results of the simulations and the figures.
 
 ________________________
 
-**II. SAMPLE DATA** 
+## II. SAMPLE DATA
 
 The sample data provided refers to the 4th COVID-19 wave and are represented by individuals.
 In the 'data4th_a.pkl,' we only provide data regarding the adult population (>18 ya). 
@@ -54,9 +56,9 @@ Variables:
 _________________
 
 
-**III. INSTRUCTIONS**
+## III. INSTRUCTIONS
 
-STEP 1: BUILD THE DECOUPLED AGE-CONTACT MATRICES
+### STEP 1: BUILD THE DECOUPLED AGE-CONTACT MATRICES
 
 1. In the config_mats.yaml you can select the variables according to which you want to 
 build the matrices. 
@@ -78,7 +80,7 @@ NOTE: TO SIMULATE THE EPIDEMIC WITH ANY DECOUPLED MATRIX YOU NEED TO COMPUTE BEF
 
 
 
-STEP 2: SIMULATE THE EPIDEMIC
+### STEP 2: SIMULATE THE EPIDEMIC
 1. In the config_sim.yaml you can select the additional dimension that you want to take into account in the 
 simulation. It has to be input as a list of one string.
 In the same file, you can modify any epidemiological parameter.
@@ -91,7 +93,7 @@ In the same file, you can modify any epidemiological parameter.
 
 ________________________
 
-**IV. PACKAGES VERSIONS**
+## IV. PACKAGES VERSIONS
 
 json5                     0.9.6              pyhd3eb1b0_0  
 matplotlib                3.5.2            py39h06a4308_0  
