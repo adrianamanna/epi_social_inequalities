@@ -143,6 +143,7 @@ def M_prep(wave_type, data_type, dep_var, vars_, wave):
 
     M = {}
     for k_M in M_str.keys():
+        #print(k_M)
         try:
             k_num = eval(k_M.split('*')[0].split('-')[1]),eval(k_M.split('*')[1].split('-')[1])
         except:
