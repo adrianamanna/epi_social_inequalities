@@ -8,8 +8,6 @@ import os
 if not os.path.exists("./_figures"):
     os.makedirs("./_figures")
 
-
-
 from utils.simulation_prep_tools import *
 from utils.epi_tools import initial_population
 from utils.labs import *
@@ -54,8 +52,7 @@ AR_key = {}
 for key in Rs_key.keys():
     AR_key[key] = {}
     for stat in Rs_key[key].keys():
-        #print(Rs_key[key][stat])
-        #print(pop_dist[key]*N)
+
         AR_key[key][stat] = np.divide(Rs_key[key][stat][-1], pop_dist[key]*N,
                   out=np.full_like(Rs_key[key][stat][-1],np.nan),
                   where=(pop_dist[key]*N != 0))
